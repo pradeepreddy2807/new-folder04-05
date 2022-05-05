@@ -1,7 +1,8 @@
 ---
-- name: mywebservers
-  hosts: all
-- my fruits:
-   - apple
-   - mango
+- hosts: mywebserver
+  tasks:
+  - name: fruits
+      my fruits:
+      apple
+      mango
     
