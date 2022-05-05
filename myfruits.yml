@@ -1,5 +1,5 @@
 ---
-- name: fruits
+- name: mywebservers
   hosts: all
 - my fruits:
    - apple
