@@ -1,4 +1,6 @@
 ---
+- name: fruits
+  hosts: all
 - my fruits:
    - apple
    - mango
