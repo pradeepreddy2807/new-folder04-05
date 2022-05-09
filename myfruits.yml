@@ -1,8 +1,8 @@
 ---
 - hosts: mywebserver
   tasks:
-  - name: fruits
+  - name: fruits 
       my fruits:
-      apple
-      mango
+       apple
+       mango
     
