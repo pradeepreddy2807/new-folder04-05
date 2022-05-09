@@ -7,6 +7,7 @@
     apt:
       name: apache2
       state: present
+      notify: restartwebservers
 
   - name: i want to copy static file into
     copy:
@@ -31,3 +32,13 @@
         url: https://get.jenkins.io/war-stable/2.332.3/jenkins.war
         dest: /home/maha/jenkins.war
         force_basic_auth: yes
+        notify: restartwebservers
+
+
+  handlers: 
+  - name: restartwebservers
+    service:
+      name: apache2
+      state: restarted
+
+
