@@ -18,8 +18,7 @@
     template:
       src: myindex.j2
       dest: /var/www/html/index.html
-    ignore_errors: yes
-
+    
   - name: i want to create a folder
     file:
       path: /home/ubuntu/myfolder
