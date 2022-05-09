@@ -25,15 +25,12 @@
       path: /home/ubuntu/myfolder
       state: directory
 
-
-
   - name: i want to download files from the remote(internet) into the nodes side
     get_url:
         url: https://get.jenkins.io/war-stable/2.332.3/jenkins.war
         dest: /home/maha/jenkins.war
         force_basic_auth: yes
         notify: restartwebservers
-
 
   handlers: 
   - name: restartwebservers
